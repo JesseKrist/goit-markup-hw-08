@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="container adjust">
+        <nav>
+          <ul class="navbar">
+            <li class="navbar__item">
+              <a class="navbar__link-logo" lang="en" href="index.html"
+                ><span lang="en" class="navbar__link-logo--blue">Web</span>Studio</a
+              >
+            </li>
+            <li class="navbar__item--long"><a class="navbar__link not-page" href="index.html">Студия</a></li>
+            <li class="navbar__item--long"><a class="navbar__link not-page current-page" href="portfolio.html">Портфолио</a></li>
+            <li class="navbar__item--long"><a class="navbar__link not-page" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="burger-btn js-open-menu" aria-expanded="false" aria-controls="mobile-" type="button">
+          <svg class="icon-burger" width="24px" height="16px"><use xlink:href="./img/icons.svg#burger"></use></svg>
+        </button>
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a class="header-contacts__link" href="mailto:info@devstudio.com">
+              <svg class="header-contacts__icon--email" width="16px" height="12px">
+                <use xlink:href="./img/icons.svg#email"></use>
+              </svg>info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contacts__item">
+            
+            <a class="header-contacts__link" href="tel:+380961111111"><svg class="header-contacts__icon--smartphone" width="10px" height="16px">
+              <use xlink:href="./img/icons.svg#smartphone"></use>
+            </svg> +38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Main Section -->
+    <main>
+      <section class="btn-group__section">
+        <h2 class="semantical">Semantical H2</h2>
+        <div class="container">
+          <ul class="btn-group__list">
+            <li class="btn-group__item"><button class="btn-group__button" type="button">Все</button></li>
+            <li class="btn-group__item">
+              <button class="btn-group__button" type="button">Веб-сайты</button>
+            </li>
+            <li class="btn-group__item"><button class="btn-group__button" type="button">Приложения</button></li>
+            <li class="btn-group__item"><button class="btn-group__button" type="button">Дизайн</button></li>
+            <li class="btn-group__item">
+              <button class="btn-group__button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          </div>
+          </section>
+          <section class="projects__section works-link">
+            <h2 class="semantical">Semantical H2</h2>
+          <div class="container">
+          <ul class="projects__list">
+            <li class="projects__item">
+              <div class="projects__container-absolute">
+                <div class="projects__container-relative">
+                  <div class="projects__overlay">
+                    <div class="overlay__card">
+                    <p class="card__text--blue">
+                      Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                  </div>
+                  </div>
+                  <picture>
+                    <source srcset="./img/notebook.webp 1x, ./img/notebook_2x.webp 2x" type="image/webp">
+                    <img class="projects__img" srcset="./img/notebook.jpg 1x, ./img/notebook_2x.jpg 2x"
+                    src="./img/notebook.jpg"
+                    alt="avatar notebook"
+                  />
+                </picture>
+                </div>
+              </div>
+
+              <h3 class="card__title">Технокряк</h3>
+              <p class="card__text">Веб-сайт</p>
+            </li>
+            <li class="projects__item">
+              <div class="projects__container-absolute">
+                <div class="projects__container-relative">
+                  <div class="projects__overlay">
+                    <div class="overlay__card">
+                    <p class="card__text--blue">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate provident excepturi, voluptas impedit minus!
+                    </p>
+                  </div>
+                  </div>
+                  <picture>
+                    <source srcset="./img/basketball.webp 1x, ./img/basketball_2x.webp 2x" type="image/webp">
+                    <img class="projects__img" srcset="./img/basketball.jpg 1x, ./img/basketball_2x.jpg 2x"
+                    src="./img/basketball.jpg"
+                    alt="Poster New Orleans vs Golden Star"
+                  />
+                </picture>
+                  </div>
+                  </div>
+              <h3 class="card__title">Постер New Orlean vs Golden Star</h3>
+              <p class="card__text">Дизайн</p>
+            </li>
+            <li class="projects__item">
+              <div class="projects__container-absolute">
+              <div class="projects__container-relative">
+              <div class="projects__overlay">
+                <div class="overlay__card">
+                <p class="card__text--blue">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate provident excepturi, voluptas impedit minus!
+                </p>
+              </div>
+              </div>
+              <picture>
+                <source srcset="./img/restaurant_logo.webp 1x, ./img/restaurant_logo_2x.webp 2x" type="image/webp">
+                <img class="projects__img" srcset="./img/restaurant_logo.jpg 1x, ./img/restaurant_logo_2x.jpg 2x"
+                src="./img/restaurant_logo.jpg"
+                alt="Restaurant logo SeaFood"
+              />
+            </picture>
+          </div>
+              </div>
+              <h3 class="card__title">Ресторан Seafood</h3>
+              <p class="card__text">Приложение</p>
+            </li>
+            <li class="projects__item">
+              <div class="projects__container-absolute">
+              <div class="projects__container-relative">
+              <div class="projects__overlay">
+                <div class="overlay__card">
+                <p class="card__text--blue">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate provident excepturi, voluptas impedit minus!
+                </p>
+              </div>
+              </div>
+              <picture>
+                <source srcset="./img/headphones.webp 1x, ./img/headphones_2x.webp 2x" type="image/webp">
+                <img class="projects__img" srcset="./img/headphones.jpg 1x, ./img/headphones_2x.jpg 2x"
+                src="./img/headphones.jpg"
+                alt="PC headphones"
+              />
+            </picture>
+              </div>
+            </div>
+              <h3 class="card__title">Проект Prime</h3>
+              <p class="card__text">Маркетинг</p>
+            </li>
+            <li class="projects__item">
+              <div class="projects__container-absolute">
+              <div class="projects__container-relative">
+              <div class="projects__overlay">
+                <div class="overlay__card">
+                <p class="card__text--blue">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate provident excepturi, voluptas impedit minus!
+                </p>
+              </div>
+              </div>
+              <picture>
+                <source srcset="./img/boxes.webp 1x, ./img/boxes_2x.webp 2x" type="image/webp">
+                <img class="projects__img" srcset="./img/boxes.jpg 1x, ./img/boxes_2x.jpg 2x"
+                src="./img/boxes.jpg"
+                alt="Two boxes"
+              />
+            </picture>
+              </div>
+            </div>
+              <h3 class="card__title">Проект Boxes</h3>
+              <p class="card__text">Приложение</p>
+            </li>
+            <li class="projects__item">
+              <div class="projects__container-absolute">
+              <div class="projects__container-relative">
+              <div class="projects__overlay">
+                <div class="overlay__card">
+                <p class="card__text--blue">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate provident excepturi, voluptas impedit minus!
+                </p>
+              </div>
+              </div>
+              <picture>
+                <source srcset="./img/desktop_screen.webp 1x, ./img/desktop_screen_2x.webp 2x" type="image/webp">
+                <img class="projects__img" srcset="./img/desktop_screen.jpg 1x, ./img/desktop_screen_2x.jpg 2x"
+                src="./img/desktop_screen.jpg"
+                alt="Desktop screen with opened site"
+              />
+            </picture>
+              </div>
+            </div>
+              <h3 class="card__title">Inspiration has no Borders</h3>
+              <p class="card__text">Веб-сайт</p>
+            </li>
+            <li class="projects__item">
+              <div class="projects__container-absolute">
+              <div class="projects__container-relative">
+              <div class="projects__overlay">
+                <div class="overlay__card">
+                <p class="card__text--blue">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate provident excepturi, voluptas impedit minus!
+                </p>
+              </div>
+              </div>
+              <picture>
+                <source srcset="./img/book.webp 1x, ./img/book_2x.webp 2x" type="image/webp">
+                <img class="projects__img" srcset="./img/book.jpg 1x, ./img/book_2x.jpg 2x"
+                src="./img/book.jpg"
+                alt="Opened book with images"
+              />
+            </picture>
+              </div>
+            </div>
+
+              <h3 class="card__title">Издание Limited Edition</h3>
+              <p class="card__text">Дизайн</p>
+            </li>
+            <li class="projects__item">
+              <div class="projects__container-absolute">
+              <div class="projects__container-relative">
+              <div class="projects__overlay">
+                <div class="overlay__card">
+                <p class="card__text--blue">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate provident excepturi, voluptas impedit minus!
+                </p>
+              </div>
+              </div>
+              <picture>
+                <source srcset="./img/label_mark.webp 1x, ./img/label_mark_2x.webp 2x" type="image/webp">
+                <img class="projects__img" srcset="./img/label_mark.jpg 1x, ./img/label_mark_2x.jpg 2x"
+                src="./img/label_mark.jpg"
+                alt="Label Mark"
+              />
+            </picture>
+              </div>
+              </div>
+              <h3 class="card__title">Проект LAB</h3>
+              <p class="card__text">Маркетинг</p>
+            </li>
+            <li class="projects__item">
+              <div class="projects__container-absolute">
+              <div class="projects__container-relative">
+              <div class="projects__overlay">
+                <div class="overlay__card">
+                <p class="card__text--blue">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate provident excepturi, voluptas impedit minus!
+                </p>
+              </div>
+              </div>
+              <picture>
+                <source srcset="./img/notebook_on.webp 1x, ./img/notebook_on_2x.webp 2x" type="image/webp">
+                <img class="projects__img" srcset="./img/notebook_on.jpg 1x, ./img/notebook_on_2x.jpg 2x"
+                src="./img/notebook_on.jpg"
+                alt="Opened notebook on table"
+              />
+            </picture>
+              </div>
+            </div>
+              <h3 class="card__title">Growing Business</h3>
+              <p class="card__text">Приложение</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+      <div class="container positioning">
+        <section class="footer__section-address">
+          <h2 class="semantical">Semantical H2</h2>
+          <a class="footer__link-logo" lang="en" href="index.html"
+            ><span lang="en" class="footer__link-logo--blue">Web</span>Studio</a
+          >
+          <address class="footer-address">
+            <ul class="footer-address__list">
+              <li class="footer-address__item">
+                <a class="footer-address__link--location"
+                  href="https://goo.gl/maps/kUcczkRKr7FWd2e16"
+                  target="_blank"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-address__item">
+                <a class="footer-address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="footer-address__item"><a class="footer-address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </section>
+        <section class="footer__section-links">
+          <h2 class="semantical">Semantical H2</h2>
+          <h3 class="footer-links__title">Присоединяйтесь</h3>
+          <ul class="footer-links__list">
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#"
+                ><svg class="footer-links__icon" width="20px" height="20px">
+                  <use xlink:href="./img/icons.svg#instagram"></use></svg></a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#"
+                ><svg class="footer-links__icon" width="20px" height="20px">
+                  <use xlink:href="./img/icons.svg#twitter"></use></svg></a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#"
+                ><svg class="footer-links__icon" width="20px" height="20px">
+                  <use xlink:href="./img/icons.svg#facebook"></use></svg></a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#"
+                ><svg class="footer-links__icon" width="20px" height="20px">
+                  <use xlink:href="./img/icons.svg#linkedin"></use></svg></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer__section-form">
+          <h2 class="semantical">Semantical H2</h2>
+          <h3 class="footer-form__title">Подпишитесь на рассылку</h3>
+          <form action="" class="footer-form" placeholder=" ">
+            <label class="footer-form__label" for="">
+              <input class="footer-form__input" type="email" placeholder="E-mail" name="email">
+              <button class="footer-form__button" type="submit">Подписаться <svg class="footer-form__button-icon" width="24px" height="24px">
+                <use xlink:href="./img/icons.svg#icon-send"></use></svg></button>
+            </label>
+          </form>
+        </section>
+      </div>
+    </footer>
+    <div class="mobile-menu js-menu-container is-hidden" id="mobile-menu">
+      <button class="mobile-menu__button js-close-menu" type="button"><svg class="mobile-menu__icon--cross" width="19px" height="19px"><use xlink:href="./img/icons.svg#cross"></use></svg></button>
+      <div class="container--mobile">
+      <div class="mobile-menu__navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="index.html">Студия</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="portfolio.html">Портфолио</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="mobile-menu__contacts">
+        <ul class="contacts__list">
+          <li class="contacts__item"><a class="contacts__link--phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="contacts__item"><a class="contacts__link--email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+      </div>
+      <div class="mobile-menu__social-network">
+        <ul class="socila-network__list">
+          <li class="social-network__item"><a href="" class="social-network__link">Instagram</a></li>
+          <li class="social-network__item"><a href="" class="social-network__link">Twitter</a></li>
+          <li class="social-network__item"><a href="" class="social-network__link">Facebook</a></li>
+          <li class="social-network__item"><a href="" class="social-network__link">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>

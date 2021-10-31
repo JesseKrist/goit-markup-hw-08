@@ -1,0 +1,121 @@
+.mobile-menu {
+    top: 0px;
+    position: fixed;
+    background-color: $white-color;
+    width: 100%;
+    padding: 21px 25px 48px 40px;
+    overflow-y: scroll;
+    height: 100vh;
+
+    &__button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        float: right;
+
+        &:focus {
+            color: $dodger_blue-color;
+            transition-property: background-color, color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__icon--cross {
+        fill: currentColor;
+    }
+
+}
+
+.navigation {
+    &__list {
+        margin-top: 27px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    &__link {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $nero-color;
+
+        &:focus {
+            color: $dodger_blue-color;
+            transition-property: background-color, color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+}
+
+.contacts {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+}
+
+.contacts__link {
+    &--phone {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 7.083vw;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $dodger_blue-color;
+    }
+
+    &--email {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: $sonic_silver-color;
+    }
+}
+
+.socila-network__list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    & li:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;
+    }
+
+    & li:not(:first-child) {
+        padding-left: 10px;
+    }
+}
+
+.social-network__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.750vw;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $dodger_blue-color;
+}
+
+.container--mobile {
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+// .social-network__item {
+//     width: calc(100vw / 4);
+// }

@@ -1,0 +1,251 @@
+footer {
+  background-color: $black_rock-color;
+  padding: 60px 0px 60px 0px;
+}
+
+.footer {
+
+  &__link-logo {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $white-color;
+
+    @media screen and (min-width:"1200px") {
+      font-size: 26px;
+      line-height: 1.2;
+    }
+
+    &--blue {
+      color: $dodger_blue-color;
+    }
+  }
+}
+
+.footer__section {
+  &-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width:"1200px") {
+      align-items: flex-start;
+    }
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width:"1200px") {
+      align-items: flex-start;
+      margin-top: 12px;
+    }
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width:"1200px") {
+      align-items: flex-start;
+      margin-top: 12px;
+    }
+
+    @media screen and (min-width:"1200px") {
+      margin-left: 23px;
+    }
+  }
+}
+
+.footer-address {
+  text-align: center;
+
+  @media screen and (min-width:"1200px") {
+    text-align: start;
+  }
+
+  &__list {
+    margin-top: 20px;
+  }
+
+  &__list li:nth-child(2) {
+    margin: 9px 0px 9px 0px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $sonic_silver-color;
+
+    &:hover {
+      color: $dodger_blue-color;
+    }
+
+    &:focus {
+      color: $dodger_blue-color;
+    }
+
+    &--location {
+      @extend .footer-address__link;
+      color: $ghost_white-color;
+    }
+  }
+}
+
+.footer-links {
+  &__title {
+    color: $white-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // width: 206px;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background: $dodger_blue-color;
+    }
+  }
+
+  &__icon {
+    fill: $white-color;
+  }
+}
+
+.footer-form {
+  margin-top: 20px;
+  width: 100%;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (min-width:"1200px") {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      row-gap: 12px;
+    }
+  }
+
+  &__title {
+    @extend .footer-links__title;
+  }
+
+  &__input {
+    width: 100%;
+
+    @media screen and (min-width:"768px") {
+      width: 450px;
+    }
+
+    @media screen and (min-width:"1200px") {
+      width: 358px;
+    }
+
+    height: 50px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+
+    &[type="email"] {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: $white-color;
+    }
+
+    &:focus {
+      outline-width: 4px;
+      outline-color: $curious_blue-color;
+    }
+  }
+}
+
+.footer-form__button {
+  width: 200px;
+  height: 50px;
+  background-color: $dodger_blue-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  border: none;
+  vertical-align: bottom;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $curious_blue-color;
+  }
+
+  &-icon {
+    fill: currentColor;
+    vertical-align: text-top;
+  }
+}
+
+.set {
+  display: flex;
+}
+
+.positioning {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  @media screen and (min-width:"768px") {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width:"1200px") {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 60px;
+  }
+}
